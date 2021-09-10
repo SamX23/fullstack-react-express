@@ -1,0 +1,21 @@
+{
+  "name": "client-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sami",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build",
+    "client-server": "cd server && yarn && cd ../client && yarn",
+    "dev-server": "cd client && yarn start",
+    "dev-client": "cd client && yarn start"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": ">=14.17.6",
+    "yarn": ">=1.22.5"
+  }
+}
