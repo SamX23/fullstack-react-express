@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "start": "node server/index.js",
-    "build": "cd client && npm install && npm run build",
+    "build": "cd client && yarn install && yarn run build",
     "client-server": "cd server && yarn && cd ../client && yarn",
-    "dev-server": "cd client && yarn start",
+    "dev-server": "node server/index.js",
+    "build-client": "cd client && yarn build",
     "dev-client": "cd client && yarn start"
   },
   "dependencies": {
